@@ -32,8 +32,10 @@ app.get('/', function(req,res){
 	res.render('index');
 });
 
-app.post('/send/:message', function(req, res){
-	messages.push(req.params.message);
+app.post('/send', function(req, res){
+	messages.push(req.body.message);
+	res.writeHead(302, { 'Location' : '/' });
+	res.end();
 });
 
 app.get('/user/:id', function(req,res){

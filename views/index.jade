@@ -1,6 +1,11 @@
 h1= title
 ul.chatbox
+
+// Sup dawg!
+
 -each message in messages
 	li.message= message
-label Say:
+form( action='/send', method='post', data-remote=
+'true')
+	label Say:
 	input(name='message')
