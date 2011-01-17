@@ -25,4 +25,17 @@ app.get('/', function(req,res){
 	res.send(_env);
 });
 
+app.get('/user/:id', function(req,res){
+	id = req.params.id;
+	if(id){
+		res.send("Welcome user: " + id);
+	} else {
+		next();
+	}
+});
+
+app.get('*', function(req,res){
+	res.send("Woops, 404 dawg");
+});
+
 app.listen(3000);
