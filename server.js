@@ -5,8 +5,7 @@ app = express.createServer();
 
 _env = "Hello World"
 title = "NodeChat"
-
-messages = ["this is an example", "Hello dog"]
+messages = []
 
 app.configure(function(){
 	app.use(express.methodOverride());
