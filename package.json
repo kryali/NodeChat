@@ -1,0 +1,7 @@
+{
+	"name": "mynodechat",
+	"version": "0.1",
+	"dependencies": {
+		"express" : ">=1.0"
+	}
+}
