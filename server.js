@@ -1,13 +1,19 @@
 express = require('express')
+jade = require('jade')
+
 app = express.createServer();
 
 _env = "Hello World"
+title = "NodeChat"
+
+messages = ["this is an example", "Hello dog"]
 
 app.configure(function(){
 	app.use(express.methodOverride());
 	app.use(express.bodyDecoder());
 	app.use(app.router);
 	app.use(express.staticProvider(__dirname + '/public'));
+	app.set('view engine', 'jade');
 })
 
 app.configure( function(){
@@ -22,7 +28,12 @@ app.configure('development', function(){
 
 
 app.get('/', function(req,res){
-	res.send(_env);
+//res.send(_env);
+	res.render('index');
+});
+
+app.post('/send/:message', function(req, res){
+	messages.push(req.params.message);
 });
 
 app.get('/user/:id', function(req,res){
