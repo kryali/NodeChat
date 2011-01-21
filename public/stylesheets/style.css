@@ -19,13 +19,22 @@ body {
     margin: 0;
     padding: 8px;
 }
+
+#wrapper {
+	-moz-box-shadow: 0px 5px 4px #333333;
+	-webkit-box-shadow: 0px 5px 4px #333333;
+	box-shadow: 0px 5px 4px #333333;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 500px;
+}
+
 #chat {
     background: none repeat scroll 0 0 white;
     border: 1px solid #CCCCCC;
     height: 400px;
     margin: 0 auto;
     overflow: auto;
-    width: 500px;
 }
 #form input[type="submit"]:active {
     -moz-box-shadow: inset 2px 1px 6px #333333;
