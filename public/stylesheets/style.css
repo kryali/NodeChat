@@ -1,6 +1,57 @@
-
-* {
-	margin: 0;
-	padding: 0;	
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body {
+    background: none repeat scroll 0 0 #555555;
 }
+* {
+    font: 14px "Lucida Grande",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#form {
+    border: 1px solid #CCCCCC;
+    display: none;
+    margin: 0 auto;
+    width: 501px;
+}
+#chat p:nth-child(2n+1) {
+    background: none repeat scroll 0 0 #F6F6F6;
+}
+#chat p {
+    margin: 0;
+    padding: 8px;
+}
+#chat {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #CCCCCC;
+    height: 400px;
+    margin: 0 auto;
+    overflow: auto;
+    width: 500px;
+}
+#form input[type="submit"]:active {
+    -moz-box-shadow: inset 2px 1px 6px #333333;
+}
+#form input[type="submit"] {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: medium none;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    padding: 7px 11px 8px 10px;
+}
+#form input[type="submit"]:hover {
+    background: #e0e0e0;
+}
+#form input[type="text"]:hover {
+    border: 1px solid #333333;
+}
+#form input[type="text"] {
+    -moz-box-sizing: border-box;
+    padding: 5px;
+    width: 90%;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+

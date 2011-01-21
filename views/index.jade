@@ -1,9 +1,7 @@
-h1= title
-ul.chatbox
-
 // Sup dawg!
-#chat Connecting..
+#wrapper
+	#chat Connecting..
 
-form(id: 'form', onSubmit='send(); return false;')
-	input(type: 'text', id:'text', autocomplete: 'off', name='message')
-	input(type: 'submit', value: 'say')
+	form(id: 'form', onSubmit='send(); return false;')
+		input(type: 'text', id:'text', autocomplete: 'off', name='message')
+		input(type: 'submit', value: 'say')
