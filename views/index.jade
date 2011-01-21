@@ -2,10 +2,8 @@ h1= title
 ul.chatbox
 
 // Sup dawg!
+#chat Connecting..
 
--each message in messages
-	li.message= message
-form( action='/send', method='post', data-remote=
-'true')
-	label Say:
-	input(name='message')
+form(id: 'form', onSubmit='send(); return false;')
+	input(type: 'text', id:'text', autocomplete: 'off', name='message')
+	input(type: 'submit', value: 'say')
