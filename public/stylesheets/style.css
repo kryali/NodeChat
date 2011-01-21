@@ -50,12 +50,11 @@ body {
     background: #e0e0e0;
 }
 #form input[type="text"]:hover {
-    border: 1px solid #333333;
 }
 #form input[type="text"] {
     -moz-box-sizing: border-box;
-    padding: 5px;
-    width: 90%;
+    padding: 6px;
+    width: 88%;
 }
 em {
     font-style: italic;

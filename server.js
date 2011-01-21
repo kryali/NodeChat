@@ -17,8 +17,6 @@ app.configure(function(){
   app.use(express.staticProvider(__dirname + '/public'));
 });
 
-console.log(express.staticProvider)
-console.log(__dirname + '/public')
 app.configure( function(){
 	app.use(express.errorHandler({dumpExceptions: true, showStack: true}));
 });

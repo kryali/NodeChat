@@ -2,6 +2,6 @@
 #wrapper
 	#chat Connecting..
 
-	form(id: 'form', onSubmit='send(); return false;')
+	form(id: 'form', onSubmit='send(); return false', data-remote='true')
 		input(type: 'text', id:'text', autocomplete: 'off', name='message')
 		input(type: 'submit', value: 'say')

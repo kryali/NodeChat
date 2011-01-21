@@ -9,7 +9,6 @@ function message(obj){
 function send(){
 	var val = document.getElementById('text').value;
 	socket.send(val);
-	console.log("Value: " + val);
 	message({ message: ['you', val] });
 	document.getElementById('text').value = '';
 }
